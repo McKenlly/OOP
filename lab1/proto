@@ -1,0 +1,17 @@
+[root@Bokoch lab1]# g++ main.cpp Rectangle.cpp Square.cpp Trapezoid.cpp
+[root@Bokoch lab1]# ./a.out
+Enter side: 15
+Figure type: Square
+Side size: 15
+Area: 225
+Square deleted
+Figure del
+[root@Bokoch lab1]# ./a.out
+Enter side: 21
+Figure type: Square
+Side size: 21
+Area: 441
+Square deleted
+Figure del
+[root@Bokoch lab1]# 
+ 

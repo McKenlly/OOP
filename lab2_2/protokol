@@ -1,0 +1,82 @@
+[root@Bokoch lab2_2]# cat test
+15
+19
+12
+3
+54
+48
+74
+1
+23
+5
+[root@Bokoch lab2_2]# g++ main.cpp Square.cpp TArray.cpp
+[root@Bokoch lab2_2]# ./a.out < test                    
+Side A = 15
+Side A = 19
+Side A = 12
+Side A = 3
+Side A = 54
+Side A = 48
+Side A = 74
+Side A = 1
+Side A = 23
+Side A = 5
+
+Side A = 12
+Replaced object in index 2 and push in back Side A = 1000
+Side A = 15
+Side A = 19
+Side A = 1000
+Side A = 3
+Side A = 54
+Side A = 48
+Side A = 74
+Side A = 1
+Side A = 23
+Side A = 5
+Side A = 1000
+
+Figure type: Square
+Side size: 15
+Area this figure: 225
+
+Figure type: Square
+Side size: 19
+Area this figure: 361
+
+Figure type: Square
+Side size: 1000
+Area this figure: 1e+06
+
+Figure type: Square
+Side size: 3
+Area this figure: 9
+
+Figure type: Square
+Side size: 54
+Area this figure: 2916
+
+Figure type: Square
+Side size: 48
+Area this figure: 2304
+
+Figure type: Square
+Side size: 74
+Area this figure: 5476
+
+Figure type: Square
+Side size: 1
+Area this figure: 1
+
+Figure type: Square
+Side size: 23
+Area this figure: 529
+
+Figure type: Square
+Side size: 5
+Area this figure: 25
+
+Figure type: Square
+Side size: 1000
+Area this figure: 1e+06
+ 

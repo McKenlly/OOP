@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/OOP.dir/main.cpp.o CMakeFiles/OOP.dir/Rectangle.cpp.o CMakeFiles/OOP.dir/Trapezoid.cpp.o CMakeFiles/OOP.dir/Square.cpp.o  -o OOP 

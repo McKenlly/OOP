@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/Figure.h
+
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/Square.cpp
+Square.h
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/Square.h
+
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/Square.h
+iostream
+-
+Figure.h
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/Figure.h
+
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/TArray.cpp
+TArray.h
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/TArray.h
+
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/TArray.h
+Square.h
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/Square.h
+iostream
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/iostream
+
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/main.cpp
+cstdlib
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/cstdlib
+iostream
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/iostream
+TArray.h
+/home/bokoch/Рабочий стол/CLionProjects/OOP/lab2_2/TArray.h
+

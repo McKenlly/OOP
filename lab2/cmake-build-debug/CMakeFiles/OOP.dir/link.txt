@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/OOP.dir/main.cpp.o CMakeFiles/OOP.dir/Square.cpp.o CMakeFiles/OOP.dir/TQueueItem.cpp.o CMakeFiles/OOP.dir/Queue.cpp.o  -o OOP 
