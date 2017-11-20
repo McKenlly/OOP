@@ -9,8 +9,8 @@ TArray<T>::TArray() {
 }
 template <class T>
 TArray<T>::TArray(const size_t &sizeArr) {
-    _data = new std::shared_ptr<T>[sizeArr+DEFAULT_CAPACITY];
-    for (int i = 0; i <= sizeArr; i++) {
+    _data = new std::shared_ptr<T>[sizeArr];
+    for (int i = 0; i < sizeArr; i++) {
         _data[i] = nullptr;
     }
     _capacity = sizeArr;
@@ -39,22 +39,7 @@ std::ostream &operator<<(std::ostream &os, const TArray<T> &objArr) {
     }
     return os;
 }
-template <class T>
-void TArray<T>::Push_back(std::shared_ptr<T> temp) {
-    if (_size == _capacity) {
-        _capacity *= 2;
-        std::shared_ptr<T> *copyArr = new std::shared_ptr<T>[_capacity];
-        for (size_t index = 0; index < _size; ++index) {
-            copyArr[index] = this->_data[index];
-        }
-        delete [] _data;
-        _data = copyArr;
-    }
-    this->_data[_size++] = temp;
-    std::cout << "NOOOOOO\n";
-    _data[_size-1]->Print();
-    this->_data[_size++] = nullptr;
-}
+
 template <class T>
 void TArray<T>::Push_back(std::shared_ptr<T> &temp) {
     if (_size == _capacity) {
@@ -67,7 +52,6 @@ void TArray<T>::Push_back(std::shared_ptr<T> &temp) {
         _data = copyArr;
     }
     this->_data[_size++] = temp;
-    this->_data[_size] = nullptr;
 }
 template <class T>
 bool TArray<T>::Delete(const size_t index) {
@@ -85,45 +69,16 @@ bool TArray<T>::Delete(const size_t index) {
     _size--;
     delete [] _data;
     _data = tCopy;
-    _data[_size] = nullptr;
     return flag;
 }
-
-template <class T>
-TIterator<std::shared_ptr<T>> TArray<T>::begin() {
-    return TIterator<std::shared_ptr<T>>(0, &_data);
-}
-
-template <class T>
-TIterator<std::shared_ptr<T>> TArray<T>::end() {
-    return TIterator<std::shared_ptr<T>>(_size, &_data);
-}
-
-
 template <class T>
 std::shared_ptr<T>& TArray<T>::operator[](size_t index) const{
-    /*try {
-        if (index < _size && index > 0)
-            return _data[index];
-        else
-            throw "EXCEPTION\n";
-    }
-    catch (char *a) {
-        std::cout << a;
-    }*/
+    //if (index < _size && index > 0)
     return _data[index];
 }
 template <class T>
 std::shared_ptr<T>& TArray<T>::operator[](size_t index) {
-    /*try {
-        if (index < _size && index > 0)
-            return _data[index];
-        else
-            throw "EXCEPTION";
-    }
-    catch (char *a) {
-        std::cout << a;
-    }*/
+    // if (index < _size && index > 0)
     return _data[index];
 }
 template <class T>
@@ -136,21 +91,23 @@ size_t TArray<T>::Capacity() const {
     return this->_capacity;
 }
 
-/*bool TArray<T>::Replace(const Figure &oldT, const Figure &newT) {
-    for (size_t index = 0; index < _size; index++)
-        if (this->_data[index] == oldT) {
-            this->_data[index] = newT;
-            return true;
-        }
-    return false;
-}*/
-
-
 template <class T>
 TArray<T>::~TArray() {
     delete[] _data;
 }
 
+template <class T>
+TIterator<std::shared_ptr<T>> TArray<T>::begin() {
+    return TIterator<std::shared_ptr<T>>(0, _data);
+}
+
+template <class T>
+TIterator<std::shared_ptr<T>> TArray<T>::end() {
+    return TIterator<std::shared_ptr<T>>(_size, _data);
+}
+
+
 #include "Figure.h"
 template class TArray<Figure>;
-template std::ostream& operator<<(std::ostream &out, const TArray<Figure> &obj);
+template
+std::ostream& operator << (std::ostream &os, const TArray<Figure> &objArr);
