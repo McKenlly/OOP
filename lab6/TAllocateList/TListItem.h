@@ -1,11 +1,6 @@
-//
-// Created by bokoch on 21.11.17.
-//
 
 #ifndef LAB6_TLISTITEM_H
 #define LAB6_TLISTITEM_H
-
-
 #include <iostream>
 template <class T>
 class TListItem {
@@ -25,5 +20,5 @@ private:
     TListItem<T> *next;
 };
 
-
+#include "TListItem.cpp"
 #endif //LAB6_TLISTITEM_H

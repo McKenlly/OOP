@@ -1,11 +1,7 @@
-//
-// Created by bokoch on 21.11.17.
-//
 
 #ifndef LAB6_TLIST_H
 #define LAB6_TLIST_H
-
-#include "TListItem.cpp"
+#include "TListItem.h"
 
 template <class T>
 class TList {
@@ -26,7 +22,5 @@ public:
 };
 
 typedef unsigned char Byte;
-
-template class
-TListItem<void *>;
+#include "TList.cpp"
 #endif //LAB6_TLIST_H

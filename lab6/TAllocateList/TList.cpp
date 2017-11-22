@@ -1,3 +1,5 @@
+#ifndef LAB6_TLIST_CPP
+#define LAB6_TLIST_CPP
 #include "TList.h"
 
 template <class T>
@@ -62,3 +64,4 @@ void TList<T>::PopFront() {
 //        _size--;
 //    }
 //}
+#endif

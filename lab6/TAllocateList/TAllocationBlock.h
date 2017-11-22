@@ -1,11 +1,7 @@
-//
-// Created by bokoch on 21.11.17.
-//
-
 #ifndef LAB6_TALLOCATIONBLOCK_H
 #define LAB6_TALLOCATIONBLOCK_H
+#include "TList.h"
 #include <cstdlib>
-#include "TList.cpp"
 
 class TAllocationBlock {
 public:

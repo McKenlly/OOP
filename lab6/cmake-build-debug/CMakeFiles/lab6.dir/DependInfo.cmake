@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.cpp" "/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.o"
   "/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.cpp" "/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles/lab6.dir/TAllocateList/TList.cpp.o"
   "/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.cpp" "/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles/lab6.dir/TAllocateList/TListItem.cpp.o"
+  "/home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TArray.cpp" "/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o"
   "/home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TIterator.cpp" "/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o"
   "/home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TVectorItem.cpp" "/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o"
   "/home/bokoch/CLionProjects/OOP/lab6/main.cpp" "/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles/lab6.dir/main.cpp.o"

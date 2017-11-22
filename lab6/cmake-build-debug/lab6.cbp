@@ -118,10 +118,10 @@
 		<Unit filename="/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.h">
 			<Option target="lab6"/>
 		</Unit>
-		<Unit filename="/home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TArray.h">
+		<Unit filename="/home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TArray.cpp">
 			<Option target="lab6"/>
 		</Unit>
-		<Unit filename="/home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TArray.hpp">
+		<Unit filename="/home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TArray.h">
 			<Option target="lab6"/>
 		</Unit>
 		<Unit filename="/home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TIterator.cpp">

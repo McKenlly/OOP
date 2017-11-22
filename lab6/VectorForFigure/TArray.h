@@ -47,5 +47,4 @@ private:
     size_t _size;
 
 };
-#include "TArray.hpp"
 #endif  // PROG_TVector_H

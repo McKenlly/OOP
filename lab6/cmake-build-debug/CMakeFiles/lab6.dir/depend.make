@@ -28,6 +28,20 @@ CMakeFiles/lab6.dir/TAllocateList/TList.cpp.o: ../TAllocateList/TListItem.h
 CMakeFiles/lab6.dir/TAllocateList/TListItem.cpp.o: ../TAllocateList/TListItem.cpp
 CMakeFiles/lab6.dir/TAllocateList/TListItem.cpp.o: ../TAllocateList/TListItem.h
 
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../Figure/Figure.h
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../Figure/Rectangle.h
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../Figure/Square.h
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../Figure/Trapezoid.h
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../TAllocateList/TAllocationBlock.h
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../TAllocateList/TList.cpp
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../TAllocateList/TList.h
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../TAllocateList/TListItem.cpp
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../TAllocateList/TListItem.h
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../VectorForFigure/./TIterator.h
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../VectorForFigure/./TVectorItem.h
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../VectorForFigure/TArray.cpp
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../VectorForFigure/TArray.h
+
 CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o: ../VectorForFigure/./TIterator.h
 CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o: ../VectorForFigure/TIterator.cpp
 
@@ -42,7 +56,6 @@ CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o: ../VectorForFigure/TVecto
 CMakeFiles/lab6.dir/main.cpp.o: .././VectorForFigure/./TIterator.h
 CMakeFiles/lab6.dir/main.cpp.o: .././VectorForFigure/./TVectorItem.h
 CMakeFiles/lab6.dir/main.cpp.o: .././VectorForFigure/TArray.h
-CMakeFiles/lab6.dir/main.cpp.o: .././VectorForFigure/TArray.hpp
 CMakeFiles/lab6.dir/main.cpp.o: ../Figure/Figure.h
 CMakeFiles/lab6.dir/main.cpp.o: ../Figure/Rectangle.h
 CMakeFiles/lab6.dir/main.cpp.o: ../Figure/Square.h

@@ -1,6 +1,5 @@
 
 #include "TAllocationBlock.h"
-#include <iostream>
 TAllocationBlock::TAllocationBlock(size_t size, size_t count) : _size(size), _count(count) {
     _used_blocks = (unsigned char *)malloc(_size*_count);
     for (size_t i = 0; i < _count; i++) {

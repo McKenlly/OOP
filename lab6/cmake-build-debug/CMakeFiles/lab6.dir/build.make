@@ -153,9 +153,33 @@ CMakeFiles/lab6.dir/Figure/Square.cpp.o.provides: CMakeFiles/lab6.dir/Figure/Squ
 CMakeFiles/lab6.dir/Figure/Square.cpp.o.provides.build: CMakeFiles/lab6.dir/Figure/Square.cpp.o
 
 
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: CMakeFiles/lab6.dir/flags.make
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o: ../VectorForFigure/TArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o -c /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TArray.cpp
+
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TArray.cpp > CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.i
+
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TArray.cpp -o CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.s
+
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o.requires:
+
+.PHONY : CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o.requires
+
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o.provides: CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o.provides.build
+.PHONY : CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o.provides
+
+CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o.provides.build: CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o
+
+
 CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o: CMakeFiles/lab6.dir/flags.make
 CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o: ../VectorForFigure/TIterator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o -c /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TIterator.cpp
 
 CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o.provides.build: CMakeFiles/l
 
 CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.o: CMakeFiles/lab6.dir/flags.make
 CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.o: ../TAllocateList/TAllocationBlock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.o -c /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.cpp
 
 CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o: CMakeFiles/lab6.dir/flags.make
 CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o: ../VectorForFigure/TVectorItem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o -c /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TVectorItem.cpp
 
 CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/lab6.dir/TAllocateList/TList.cpp.o: CMakeFiles/lab6.dir/flags.make
 CMakeFiles/lab6.dir/TAllocateList/TList.cpp.o: ../TAllocateList/TList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lab6.dir/TAllocateList/TList.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lab6.dir/TAllocateList/TList.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab6.dir/TAllocateList/TList.cpp.o -c /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.cpp
 
 CMakeFiles/lab6.dir/TAllocateList/TList.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/lab6.dir/TAllocateList/TList.cpp.o.provides.build: CMakeFiles/lab6.di
 
 CMakeFiles/lab6.dir/TAllocateList/TListItem.cpp.o: CMakeFiles/lab6.dir/flags.make
 CMakeFiles/lab6.dir/TAllocateList/TListItem.cpp.o: ../TAllocateList/TListItem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lab6.dir/TAllocateList/TListItem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lab6.dir/TAllocateList/TListItem.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab6.dir/TAllocateList/TListItem.cpp.o -c /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.cpp
 
 CMakeFiles/lab6.dir/TAllocateList/TListItem.cpp.i: cmake_force
@@ -279,6 +303,7 @@ lab6_OBJECTS = \
 "CMakeFiles/lab6.dir/Figure/Rectangle.cpp.o" \
 "CMakeFiles/lab6.dir/Figure/Trapezoid.cpp.o" \
 "CMakeFiles/lab6.dir/Figure/Square.cpp.o" \
+"CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o" \
 "CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o" \
 "CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.o" \
 "CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o" \
@@ -292,6 +317,7 @@ lab6: CMakeFiles/lab6.dir/main.cpp.o
 lab6: CMakeFiles/lab6.dir/Figure/Rectangle.cpp.o
 lab6: CMakeFiles/lab6.dir/Figure/Trapezoid.cpp.o
 lab6: CMakeFiles/lab6.dir/Figure/Square.cpp.o
+lab6: CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o
 lab6: CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o
 lab6: CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.o
 lab6: CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o
@@ -299,7 +325,7 @@ lab6: CMakeFiles/lab6.dir/TAllocateList/TList.cpp.o
 lab6: CMakeFiles/lab6.dir/TAllocateList/TListItem.cpp.o
 lab6: CMakeFiles/lab6.dir/build.make
 lab6: CMakeFiles/lab6.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable lab6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bokoch/CLionProjects/OOP/lab6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable lab6"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab6.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -311,6 +337,7 @@ CMakeFiles/lab6.dir/requires: CMakeFiles/lab6.dir/main.cpp.o.requires
 CMakeFiles/lab6.dir/requires: CMakeFiles/lab6.dir/Figure/Rectangle.cpp.o.requires
 CMakeFiles/lab6.dir/requires: CMakeFiles/lab6.dir/Figure/Trapezoid.cpp.o.requires
 CMakeFiles/lab6.dir/requires: CMakeFiles/lab6.dir/Figure/Square.cpp.o.requires
+CMakeFiles/lab6.dir/requires: CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o.requires
 CMakeFiles/lab6.dir/requires: CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o.requires
 CMakeFiles/lab6.dir/requires: CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.o.requires
 CMakeFiles/lab6.dir/requires: CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o.requires

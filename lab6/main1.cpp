@@ -1,10 +1,5 @@
-//
-// Created by bokoch on 21.11.17.
-//
-
 #include <iostream>
-#include <cmath>
-#include "TAllocationBlock.h"
+#include "./TAllocateList/TAllocationBlock.h"
 
 int main() {
     TAllocationBlock temp(40, 1);

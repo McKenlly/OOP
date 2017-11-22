@@ -285,6 +285,33 @@ TAllocateList/TListItem.cpp.s:
 	$(MAKE) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/TAllocateList/TListItem.cpp.s
 .PHONY : TAllocateList/TListItem.cpp.s
 
+VectorForFigure/TArray.o: VectorForFigure/TArray.cpp.o
+
+.PHONY : VectorForFigure/TArray.o
+
+# target to build an object file
+VectorForFigure/TArray.cpp.o:
+	$(MAKE) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o
+.PHONY : VectorForFigure/TArray.cpp.o
+
+VectorForFigure/TArray.i: VectorForFigure/TArray.cpp.i
+
+.PHONY : VectorForFigure/TArray.i
+
+# target to preprocess a source file
+VectorForFigure/TArray.cpp.i:
+	$(MAKE) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.i
+.PHONY : VectorForFigure/TArray.cpp.i
+
+VectorForFigure/TArray.s: VectorForFigure/TArray.cpp.s
+
+.PHONY : VectorForFigure/TArray.s
+
+# target to generate assembly for a file
+VectorForFigure/TArray.cpp.s:
+	$(MAKE) -f CMakeFiles/lab6.dir/build.make CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.s
+.PHONY : VectorForFigure/TArray.cpp.s
+
 VectorForFigure/TIterator.o: VectorForFigure/TIterator.cpp.o
 
 .PHONY : VectorForFigure/TIterator.o
@@ -393,6 +420,9 @@ help:
 	@echo "... TAllocateList/TListItem.o"
 	@echo "... TAllocateList/TListItem.i"
 	@echo "... TAllocateList/TListItem.s"
+	@echo "... VectorForFigure/TArray.o"
+	@echo "... VectorForFigure/TArray.i"
+	@echo "... VectorForFigure/TArray.s"
 	@echo "... VectorForFigure/TIterator.o"
 	@echo "... VectorForFigure/TIterator.i"
 	@echo "... VectorForFigure/TIterator.s"

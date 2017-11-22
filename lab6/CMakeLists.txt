@@ -3,9 +3,9 @@ project(lab6)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES  main.cpp  ./Figure/Rectangle.cpp ./Figure/Trapezoid.cpp ./Figure/Square.cpp ./VectorForFigure/TArray.hpp ./VectorForFigure/TArray.h
+set(SOURCE_FILES  main.cpp  ./Figure/Rectangle.cpp ./Figure/Trapezoid.cpp ./Figure/Square.cpp ./VectorForFigure/TArray.cpp ./VectorForFigure/TArray.h
         ./VectorForFigure/TIterator.cpp ./TAllocateList/TAllocationBlock.cpp ./TAllocateList/TAllocationBlock.h
-        ./VectorForFigure/TVectorItem.cpp ./TAllocateList/TList.cpp ./TAllocateList/TListItem.cpp)
+        ./VectorForFigure/TVectorItem.cpp TAllocateList/TList.cpp TAllocateList/TListItem.cpp)
 add_executable(lab6 ${SOURCE_FILES})
 
 #main.cpp ./Figure/Rectangle.cpp ./Figure/Trapezoid.cpp ./Figure/Square.cpp TArray.hpp TArray.h

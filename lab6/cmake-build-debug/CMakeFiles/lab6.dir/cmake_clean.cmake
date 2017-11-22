@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lab6.dir/Figure/Rectangle.cpp.o"
   "CMakeFiles/lab6.dir/Figure/Trapezoid.cpp.o"
   "CMakeFiles/lab6.dir/Figure/Square.cpp.o"
+  "CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o"
   "CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o"
   "CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.o"
   "CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o"
