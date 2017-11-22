@@ -34,20 +34,20 @@ void *TVectorItem <T>::operator new (size_t size) {
     return memory.allocate();
 }
 
-template <class T>
+/*template <class T>
 void *TVectorItem <T>::operator new [](size_t count) {
     return memory.allocateSome(count);
-}
+}*/
 
 template <class T>
 void TVectorItem <T>::operator delete (void *p) {
     memory.deallocate(p);
 }
-
+/*
 template <class T>
 void TVectorItem <T>::operator delete[] (void *p, size_t count) {
     memory.deallocateSome(p,count);
-}
+}*/
 
 template <class T>
 TVectorItem <T>::~TVectorItem () {

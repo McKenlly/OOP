@@ -1,16 +1,14 @@
 #include "TArray.h"
 
-template <class T>
-TAllocationBlock TArray<T>::memory(sizeof());
 
 template <class T>
-TArray<T>::TArray() {
+TVector<T>::TVector() {
     _data = new std::shared_ptr<T>[DEFAULT_CAPACITY];
     _capacity = DEFAULT_CAPACITY;
     _size = 0;
 }
 template <class T>
-TArray<T>::TArray(const size_t &sizeArr) {
+TVector<T>::TVector(const size_t &sizeArr) {
     _data = new std::shared_ptr<T>[sizeArr];
     for (int i = 0; i < sizeArr; i++) {
         _data[i] = nullptr;
@@ -18,19 +16,19 @@ TArray<T>::TArray(const size_t &sizeArr) {
     _capacity = sizeArr;
     _size = 0;
 }
-template <class T>
-void *TArray<T>::operator new(size_t size)
+/*template <class T>*/
+/*void *TVector<T>::operator new(size_t size)
 {
     return allocSimple.allocate();
 }
 template <class T>
-void TArray<T>::operator delete(void *ptr)
+void TVector<T>::operator delete(void *ptr)
 {
     allocSimple.deallocate(ptr);
-}
+}*/
 
 template <class T>
-TArray<T>::TArray(TArray<T>& orig) {
+TVector<T>::TVector(TVector<T>& orig) {
     _data = new std::shared_ptr<T>[orig._capacity];
     this->_size = orig._size;
     this->_capacity = orig._capacity;
@@ -39,11 +37,11 @@ TArray<T>::TArray(TArray<T>& orig) {
     }
 }
 template <class T>
-bool TArray<T>::Empty() {
+bool TVector<T>::Empty() {
     return _size == 0;
 }
 template <class T>
-std::ostream &operator<<(std::ostream &os, const TArray<T> &objArr) {
+std::ostream &operator<<(std::ostream &os, const TVector<T> &objArr) {
     for (size_t index = 0; index < objArr._size; ++index) {
         if (&objArr[index] != nullptr) {
             os << index << "\t";
@@ -54,7 +52,7 @@ std::ostream &operator<<(std::ostream &os, const TArray<T> &objArr) {
 }
 
 template <class T>
-void TArray<T>::Push_back(std::shared_ptr<T> &temp) {
+void TVector<T>::Push_back(std::shared_ptr<T> &temp) {
     if (_size == _capacity) {
         _capacity *= 2;
         std::shared_ptr<T> *copyArr = new std::shared_ptr<T>[_capacity];
@@ -67,7 +65,7 @@ void TArray<T>::Push_back(std::shared_ptr<T> &temp) {
     this->_data[_size++] = temp;
 }
 template <class T>
-bool TArray<T>::Delete(const size_t index) {
+bool TVector<T>::Delete(const size_t index) {
     std::shared_ptr<T> *tCopy = new std::shared_ptr<T>[_capacity];
     int j = 0;
     bool flag = false;
@@ -85,42 +83,42 @@ bool TArray<T>::Delete(const size_t index) {
     return flag;
 }
 template <class T>
-std::shared_ptr<T>& TArray<T>::operator[](size_t index) const{
+std::shared_ptr<T>& TVector<T>::operator[](size_t index) const{
     //if (index < _size && index > 0)
     return _data[index];
 }
 template <class T>
-std::shared_ptr<T>& TArray<T>::operator[](size_t index) {
+std::shared_ptr<T>& TVector<T>::operator[](size_t index) {
     // if (index < _size && index > 0)
     return _data[index];
 }
 template <class T>
-size_t TArray<T>::Size() const{
+size_t TVector<T>::Size() const{
     return this->_size;
 }
 
 template <class T>
-size_t TArray<T>::Capacity() const {
+size_t TVector<T>::Capacity() const {
     return this->_capacity;
 }
 
 template <class T>
-TArray<T>::~TArray() {
+TVector<T>::~TVector() {
     delete[] _data;
 }
 
 template <class T>
-TIterator<std::shared_ptr<T>> TArray<T>::begin() {
+TIterator<std::shared_ptr<T>> TVector<T>::begin() {
     return TIterator<std::shared_ptr<T>>(0, _data);
 }
 
 template <class T>
-TIterator<std::shared_ptr<T>> TArray<T>::end() {
+TIterator<std::shared_ptr<T>> TVector<T>::end() {
     return TIterator<std::shared_ptr<T>>(_size, _data);
 }
 
 
-#include "./Figure/Figure.h"
-template class TArray<Figure>;
+#include "/home/bokoch/CLionProjects/OOP/lab6/Figure/Figure.h"
+template class TVector<Figure>;
 template
-std::ostream& operator << (std::ostream &os, const TArray<Figure> &objArr);
+std::ostream& operator << (std::ostream &os, const TVector<Figure> &objArr);
