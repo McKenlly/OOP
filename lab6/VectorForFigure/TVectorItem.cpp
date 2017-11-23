@@ -50,7 +50,8 @@ void TVectorItem <T>::operator delete[] (void *p, size_t count) {
 
 template <class T>
 TVectorItem <T>::~TVectorItem () {
-    //std::cout << "TVectorItem deleted" << std::endl;
+    delete _value;
+    std::cout << "TVectorItem deleted" << std::endl;
 }
 
 #endif
