@@ -16,8 +16,8 @@ public:
     void PushBack(T& item);
     bool IsEmpty();
     void PopFront();
-    TIterator<TListItem<T> > begin();
-    TIterator<TListItem<T> > end();
+    TIteratorList<TListItem<T> > begin();
+    TIteratorList<TListItem<T> > end();
     size_t size() const;
     T& Front();
     T& Back();

@@ -60,13 +60,13 @@ void TList<T>::PopFront() {
 }
 
 template <class T>
-TIterator<TListItem<T> > TList<T>::begin() {
-    return TIterator<TListItem<T> >(_head);
+TIteratorList<TListItem<T> > TList<T>::begin() {
+    return TIteratorList<TListItem<T> >(_head);
 }
 
 template <class T>
-TIterator<TListItem<T> > TList<T>::end() {
-    return TIterator<TListItem<T> >(_tail->GetNext());
+TIteratorList<TListItem<T> > TList<T>::end() {
+    return TIteratorList<TListItem<T> >(_tail->GetNext());
 }
 
 //void TList<T>::PopBack() {

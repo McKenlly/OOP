@@ -3,50 +3,50 @@
 #include "TIteratorList.h"
 
 template <class T>
-TIterator<T>::TIterator(T *value) {
+TIteratorList<T>::TIteratorList(T *value) {
     _value = value;
 }
 
 template <class T>
-T & TIterator<T>::operator*() {
+T & TIteratorList<T>::operator*() {
     return *_value;
 }
 
 template <class T>
-T & TIterator<T>::operator->() {
+T & TIteratorList<T>::operator->() {
     return *_value;
 }
 
 template <class T>
-void TIterator<T>::operator++() {
+void TIteratorList<T>::operator++() {
     _value = _value->GetNext();
 }
-    
+
 /*template <class T>
-void TIterator<T>::operator--() {
+void TIteratorList<T>::operator--() {
     _value->GetPrev;
 }*/
 template <class T>
-TIterator<T>& TIterator<T>::operator++(int) {
-    TIterator<T> *tmp = this;
+TIteratorList<T>& TIteratorList<T>::operator++(int) {
+    TIteratorList<T> *tmp = this;
     this->_value = this->_value->GetNext();
     return *tmp;
 }
 /*
 template <class T>
-TIterator<T>& TIterator<T>::operator--(int) {
-    TIterator<T> *tmp = this;
+TIteratorList<T>& TIteratorList<T>::operator--(int) {
+    TIteratorList<T> *tmp = this;
     --(*this);
     return *tmp;
 }*/
 
 template <class T>
-bool TIterator<T>::operator==(const TIterator &i) const{
+bool TIteratorList<T>::operator==(const TIteratorList &i) const{
     return this->_value == i._value;
 }
 
 template <class T>
-bool TIterator<T>::operator!=(const TIterator &i) const{
+bool TIteratorList<T>::operator!=(const TIteratorList &i) const{
     return !(this->_value == i._value);
 }
 #endif
