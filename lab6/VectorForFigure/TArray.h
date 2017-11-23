@@ -7,7 +7,7 @@
 #include "/home/bokoch/CLionProjects/OOP/lab6/Figure/Trapezoid.h"
 #include "./TIterator.h"
 #include "./TVectorItem.h"
-const size_t DEFAULT_CAPACITY = 10;
+const size_t DEFAULT_CAPACITY = 1;
 template <class T>
 class TVector {
 public:
@@ -17,7 +17,7 @@ public:
 
     TVector(TVector&);
 
-    void Push_back(std::shared_ptr<T> &);
+    void Push_back(T &);
 
     bool Delete(const size_t);
 
@@ -27,19 +27,19 @@ public:
 
     size_t Capacity() const;
 
-    std::shared_ptr<T>& operator[](size_t);
+    T& operator[](size_t);
 
-    std::shared_ptr<T>& operator[](size_t) const;
+    T& operator[](size_t) const;
     //Дружественный метод ТОЛЬКО для класса Figure.
     template <class A> friend std::ostream &operator<<(std::ostream &, const TVector<A> &);
 
-    TIterator <std::shared_ptr<T>> begin ();
-    TIterator <std::shared_ptr<T>> end ();
+    TIterator <TVectorItem<T>*> begin ();
+    TIterator <TVectorItem<T>*> end ();
     //void * operator new(size_t size);
     //void operator delete(void *ptr);
     ~TVector();
 private:
-    std::shared_ptr<T> *_data;
+    TVectorItem<T> **_data;
 
     //static TAllocationBlock memory;
     size_t _capacity;

@@ -9,7 +9,7 @@ public:
     void *allocate();
     void deallocate(void *pointer);
     bool has_free_blocks();
-
+    bool Find(void *);
     virtual ~TAllocationBlock();
 private:
     size_t _size;

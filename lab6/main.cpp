@@ -16,22 +16,26 @@ void Display()
 int main(int argc, char **argv) {
     int action = 0;
     TVector<Figure> *array = new TVector<Figure>;
-    std::shared_ptr<Figure> ptr, ptr2;
+    //std::shared_ptr<Figure> ptr, ptr2;
     do {
         Display();
         std::cin >> action;
+        Figure *s1;
         switch(action) {
             case 1:
-                ptr = std::make_shared<Trapezoid>(std::cin);
-                array->Push_back(ptr);
+                s1 = new Trapezoid(std::cin);
+                array->Push_back(*s1);
+                //delete s1;
                 break;
             case 2:
-                ptr = std::make_shared<Square>(std::cin);
-                array->Push_back(ptr);
+                s1 = new Square(std::cin);
+                array->Push_back(*s1);
+                //delete s1;
                 break;
             case 3:
-                ptr = std::make_shared<Rectangle>(std::cin);
-                array->Push_back(ptr);
+                s1 = new Rectangle(std::cin);
+                array->Push_back(*s1);
+                //delete s1;
                 break;
             case 4:
                 std::cout << "Enter index" << std::endl;
@@ -45,9 +49,8 @@ int main(int argc, char **argv) {
                 }
                 else {
                     for (auto i:*array) {
-                        std::cout << i->Area() << std::endl;
+                        std::cout << (*i) << std::endl;
                     }
-                    //std::cout << array << std::endl;
                 }
                 break;
             case 6:
@@ -58,10 +61,10 @@ int main(int argc, char **argv) {
                     std::cout << "Array is empty" << std::endl;
                 }
                 else {
-                    if (array->Size() > ind || (*array)[ind] != nullptr)
-                    (*array)[ind]->Print();
-                    else
-                        std::cout << "No such Figure" << std::endl;
+//                    if (array->Size() > ind || (*array)[ind]. != nullptr)
+//                        (*array)[ind]->Print();
+//                    else
+//                        std::cout << "No such Figure" << std::endl;
                 }
                 break;
             case 0:

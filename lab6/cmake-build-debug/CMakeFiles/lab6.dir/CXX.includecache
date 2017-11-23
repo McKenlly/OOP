@@ -12,6 +12,10 @@ iostream
 cstdlib
 -
 
+/home/bokoch/CLionProjects/OOP/lab6/./VectorForFigure/./TVectorItem.cpp
+./TVectorItem.h
+/home/bokoch/CLionProjects/OOP/lab6/./VectorForFigure/././TVectorItem.h
+
 /home/bokoch/CLionProjects/OOP/lab6/./VectorForFigure/./TVectorItem.h
 memory
 -
@@ -19,6 +23,8 @@ iostream
 -
 /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.h
 -
+TVectorItem.cpp
+/home/bokoch/CLionProjects/OOP/lab6/./VectorForFigure/./TVectorItem.cpp
 
 /home/bokoch/CLionProjects/OOP/lab6/./VectorForFigure/TArray.h
 iostream
@@ -106,6 +112,10 @@ iostream
 cstdlib
 -
 
+/home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/./TVectorItem.cpp
+./TVectorItem.h
+/home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/././TVectorItem.h
+
 /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/./TVectorItem.h
 memory
 -
@@ -113,6 +123,8 @@ iostream
 -
 /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.h
 -
+TVectorItem.cpp
+/home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/./TVectorItem.cpp
 
 /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TArray.cpp
 TArray.h

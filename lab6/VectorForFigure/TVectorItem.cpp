@@ -1,37 +1,35 @@
-//
-// Created by bokoch on 21.11.17.
-//
-
+#ifndef LAB6_TVECTORITEM_CPP
+#define LAB6_TVECTORITEM_CPP
 #include "./TVectorItem.h"
 template <class T>
 TVectorItem <T>::TVectorItem () {
-    this->_item = nullptr;
+    this->_value = nullptr;
 }
 
 template <class T>
 TVectorItem <T>::TVectorItem (T &item) {
-    this->_item = &item;
+    this->_value = &item;
     std::cout << "TVectorItem: created" << std::endl;
 }
 
 template <class T>
 TVectorItem <T>::TVectorItem (T *item) {
-    this->_item = item;
+    this->_value = item;
     std::cout << "TVectorItem: created" << std::endl;
 }
 
 template <class T>
-TAllocationBlock TVectorItem <T>::memory (sizeof(T), 1000);
+TAllocationBlock TVectorItem <T>::Memory (16, 1000);
 
 template <class A>
 std::ostream &operator << (std::ostream &os, const TVectorItem <A> &obj) {
-    obj._item->Print();
+    obj._value->Print();
     return os;
 }
 
 template <class T>
 void *TVectorItem <T>::operator new (size_t size) {
-    return memory.allocate();
+    return Memory.allocate();
 }
 
 /*template <class T>
@@ -41,7 +39,8 @@ void *TVectorItem <T>::operator new [](size_t count) {
 
 template <class T>
 void TVectorItem <T>::operator delete (void *p) {
-    memory.deallocate(p);
+    if (Memory.Find(p))
+        Memory.deallocate(p);
 }
 /*
 template <class T>
@@ -53,3 +52,5 @@ template <class T>
 TVectorItem <T>::~TVectorItem () {
     //std::cout << "TVectorItem deleted" << std::endl;
 }
+
+#endif

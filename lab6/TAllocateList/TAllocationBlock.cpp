@@ -23,7 +23,9 @@ void * TAllocationBlock::allocate() {
     }
     return result;
 }
-
+bool TAllocationBlock::Find(void *pointer) {
+    return (_used_blocks < pointer && pointer < _used_blocks + _size*_count);
+}
 void TAllocationBlock::deallocate(void *pointer) {
     std::cout << "TAllocationBlock: Deallocate block\n";
     _free_blocks.PushBack(pointer);
@@ -34,7 +36,6 @@ bool TAllocationBlock::has_free_blocks() {
     return _free_count>0;
 }
 TAllocationBlock::~TAllocationBlock() {
-    if (_free_count < _count) std::cout << "TAllocationBlock: Memory leak?\n";
-    else std::cout << "TAllocationBlock: Memory freed\n";
+    std::cout << "Desktructor: Memory freed\n";
     free(_used_blocks);
 }

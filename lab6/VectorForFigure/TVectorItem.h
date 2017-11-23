@@ -24,16 +24,19 @@ public:
     T& operator * () {
         return *_value;
     }
+    T& GetFigure() {
+        return *_value;
+    }
     void operator delete (void *);
 
     virtual ~TVectorItem ();
 
 private:
 
-    static TAllocationBlock memory;
+    static TAllocationBlock Memory;
 
     T* _value;
 };
 
-
+#include "TVectorItem.cpp"
 #endif //LAB6_TVECTORITEM_H
