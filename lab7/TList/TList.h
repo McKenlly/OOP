@@ -16,7 +16,7 @@ public:
     TList();
     virtual ~TList();
     TList(TList<T> &);
-    void PushBack(T &);
+    void PushBack(T&);
     bool IsEmpty();
     void PopFront();
 

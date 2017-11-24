@@ -10,7 +10,8 @@ TList<T>::TList() {
 }
 template <class T>
 TList<T>::~TList() {
-    this->Destroy();
+    if (_size > 0)
+        this->Destroy();
 }
 
 template <class T>
@@ -23,6 +24,8 @@ size_t TList<T>::size() const{
 }
 template <class T>
 TList<T>::TList(TList<T> &tCopy) {
+    this->_head = nullptr;
+    this->_tail = nullptr;
     for (auto ptr: tCopy) {
         //auto p = ptr.GetValue();
         //T *p = new T(ptr.GetValue());
@@ -42,13 +45,9 @@ TList<T>& TList<T>::operator=(const TList<T> &tCopy) {
 template <class T>
 void TList<T>::Destroy() {
     std::cout << "Destroy List\n";
-    TListItem<T> *tmp = _head, *tmp2;
-    while (tmp) {
-        tmp2 = tmp->GetNext();
-        tmp->Destroy();
-        delete(tmp);
-        tmp = tmp2;
-    }
+    TListItem<T> *tmp = _head;
+    tmp->Destroy();
+    _size = 0;
 }
 template <class T>
 void TList<T>::PushBack(T& value){

@@ -15,8 +15,8 @@ public:
     void Destroy();
     void SetNext(TListItem<T>* item);
     virtual ~TListItem() {
-        std::cout << "Destroy TList Item\n";
-        // delete item;
+        /*std::cout << "Destroy TList Item\n";
+        Destroy();*/
     }
 private:
 //    std::shared_ptr<T> item;

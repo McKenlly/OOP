@@ -11,7 +11,8 @@ TListItem<T>::TListItem() {
 
 template <class T>
 TListItem<T>::TListItem(T& obj) {
-    this->item = &obj;
+    this->item =  std::move(&obj);
+//    this->item = std::make_shared<T>(obj);
     this->next = nullptr;
 }
 template <class T>
@@ -30,5 +31,11 @@ void TListItem<T>::SetNext(TListItem<T>* item) {
 template <class T>
 void TListItem<T>::Destroy() {
     delete item;
+    item = nullptr;
+    if (next) {
+        next->Destroy();
+        next = nullptr;
+    }
+    delete(this);
 }
 #endif
