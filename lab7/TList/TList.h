@@ -3,7 +3,9 @@
 #define LAB6_TLIST_H
 #include "TListItem.h"
 #include "TIteratorList.h"
-
+#include "/home/bokoch/CLionProjects/OOP/lab7/Figure/Square.h"
+#include "/home/bokoch/CLionProjects/OOP/lab7/Figure/Rectangle.h"
+#include "/home/bokoch/CLionProjects/OOP/lab7/Figure/Trapezoid.h"
 template <class T>
 class TList {
 private:
@@ -13,9 +15,13 @@ private:
 public:
     TList();
     virtual ~TList();
-    void PushBack(T& item);
+    TList(TList<T> &);
+    void PushBack(T &);
     bool IsEmpty();
     void PopFront();
+
+    TList& operator=(const TList &);
+    void Destroy();
     TIteratorList<TListItem<T> > begin();
     TIteratorList<TListItem<T> > end();
     size_t size() const;

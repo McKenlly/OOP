@@ -10,12 +10,7 @@ TList<T>::TList() {
 }
 template <class T>
 TList<T>::~TList() {
-    TListItem<T> *tmp = _head, *tmp2;
-    while (tmp) {
-        tmp2 = tmp->GetNext();
-        delete tmp;
-        tmp = tmp2;
-    }
+    this->Destroy();
 }
 
 template <class T>
@@ -27,12 +22,41 @@ size_t TList<T>::size() const{
     return _size;
 }
 template <class T>
+TList<T>::TList(TList<T> &tCopy) {
+    for (auto ptr: tCopy) {
+        //auto p = ptr.GetValue();
+        //T *p = new T(ptr.GetValue());
+        this->PushBack(ptr.GetValue());
+    }
+}
+template <class T>
+TList<T>& TList<T>::operator=(const TList<T> &tCopy) {
+    this->Destroy();
+    for (auto ptr: tCopy) {
+        auto p = ptr.GetValue();
+        this->PushBack(p);
+    }
+    return *this;
+}
+
+template <class T>
+void TList<T>::Destroy() {
+    std::cout << "Destroy List\n";
+    TListItem<T> *tmp = _head, *tmp2;
+    while (tmp) {
+        tmp2 = tmp->GetNext();
+        tmp->Destroy();
+        delete(tmp);
+        tmp = tmp2;
+    }
+}
+template <class T>
 void TList<T>::PushBack(T& value){
     if (_head == nullptr) {
-        _head = new TListItem<T>(&value);
+        _head = new TListItem<T>(value);
         _tail = _head;
     } else {
-        TListItem<T> *newNode = new TListItem<T>(&value);
+        TListItem<T> *newNode = new TListItem<T>(value);
         _tail->SetNext(newNode);
         _tail = newNode;
     }
