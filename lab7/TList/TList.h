@@ -9,21 +9,23 @@
 template <class T>
 class TList {
 private:
-    TListItem<T> *_head;
-    TListItem<T> *_tail;
+    std::shared_ptr<TListItem<T>> _head;
+    std::shared_ptr<TListItem<T>> _tail;
     size_t _size;
 public:
     TList();
     virtual ~TList();
     TList(TList<T> &);
-    void PushBack(T&);
+    void PushBack(T *);
     bool IsEmpty();
     void PopFront();
-
+    bool Erase(T &);
+    void Sort();
+    bool IsSorted();
     TList& operator=(const TList &);
     void Destroy();
-    TIteratorList<TListItem<T> > begin();
-    TIteratorList<TListItem<T> > end();
+    TIteratorList<TListItem<T>, T> begin();
+    TIteratorList<TListItem<T>, T> end();
     size_t size() const;
     T& Front();
     T& Back();
