@@ -4,7 +4,7 @@
 #include <memory>
 #include <iostream>
 #include "/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.h"
-
+#define MAX_TREE_CAPACITY 100
 template <class T>
 class TVectorItem {
 public:
@@ -19,8 +19,6 @@ public:
 
     void *operator new (size_t);
 
-    //void *operator new[] (size_t);
-    //void operator delete[] (void *, size_t);
     T& operator * () {
         return *_value;
     }

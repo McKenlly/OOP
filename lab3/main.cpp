@@ -39,7 +39,6 @@ int main(int argc, char **argv) {
                 int index;
                 std::cin >> index;
                 array.Delete(index);
-                //std::cout << ptr.use_count() << std::endl;
                 break;
             case 5:
                 if (array.Empty()) {

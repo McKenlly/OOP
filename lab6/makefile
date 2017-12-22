@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -std=c++11 -Wall -Werror -Wno-sign-compare -Wno-unused-result
+CFLAGS = -g -std=c++11 -Wall -Werror -Wno-sign-compare -Wno-unused-result
 
 PROG = lab6
 

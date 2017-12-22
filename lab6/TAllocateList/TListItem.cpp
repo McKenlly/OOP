@@ -1,31 +1,44 @@
-#ifndef LAB6_TLISTITEM_CPP
-#define LAB6_TLISTITEM_CPP
-
 #include "TListItem.h"
 
 template <class T>
-TListItem<T>::TListItem() {
-    item = nullptr;
-    next = nullptr;
+TListItem<T>::TListItem(const T &val, TListItem<T> *item)
+{
+    value = new T(val);
+    next = item;
 }
 
 template <class T>
-TListItem<T>::TListItem(T *obj) {
-    this->item = new T(*obj);
-    this->next = nullptr;
-}
-template <class T>
-T& TListItem<T>::GetValue() {
-    return *item;
-}
-template <class T>
-TListItem<T>& TListItem<T>::GetNext() {
-    return *this->next;
+void TListItem<T>::Push(const T &val)
+{
+    *value = val;
 }
 
 template <class T>
-void TListItem<T>::SetNext(TListItem<T>* item) {
-    this->next = item;
+T &TListItem<T>::Pop() const
+{
+    return *value;
 }
 
-#endif
+template <class T>
+void TListItem<T>::SetNext(TListItem<T> *item)
+{
+    next = item;
+}
+
+template <class T>
+TListItem<T> &TListItem<T>::GetNext() const
+{
+    return *next;
+}
+
+template <class T>
+TListItem<T>::~TListItem()
+{
+    delete value;
+}
+
+
+typedef unsigned char TByte;
+
+template class
+TListItem<void *>;

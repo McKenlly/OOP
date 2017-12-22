@@ -16,14 +16,11 @@ CMakeFiles/lab6.dir/Figure/Trapezoid.cpp.o
 CMakeFiles/lab6.dir/TAllocateList/TAllocationBlock.cpp.o
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.cpp
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.h
- /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.cpp
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.h
- /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.cpp
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.h
 CMakeFiles/lab6.dir/TAllocateList/TList.cpp.o
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.cpp
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.h
- /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.cpp
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.h
 CMakeFiles/lab6.dir/TAllocateList/TListItem.cpp.o
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.cpp
@@ -34,9 +31,7 @@ CMakeFiles/lab6.dir/VectorForFigure/TArray.cpp.o
  /home/bokoch/CLionProjects/OOP/lab6/Figure/Square.h
  /home/bokoch/CLionProjects/OOP/lab6/Figure/Trapezoid.h
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.h
- /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.cpp
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.h
- /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.cpp
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.h
  /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/./TIterator.h
  /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/./TVectorItem.cpp
@@ -47,10 +42,9 @@ CMakeFiles/lab6.dir/VectorForFigure/TIterator.cpp.o
  /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/./TIterator.h
  /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TIterator.cpp
 CMakeFiles/lab6.dir/VectorForFigure/TVectorItem.cpp.o
+ /home/bokoch/CLionProjects/OOP/lab6/Figure/Figure.h
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.h
- /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.cpp
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.h
- /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.cpp
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.h
  /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/./TVectorItem.cpp
  /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/./TVectorItem.h
@@ -65,8 +59,6 @@ CMakeFiles/lab6.dir/main.cpp.o
  /home/bokoch/CLionProjects/OOP/lab6/Figure/Square.h
  /home/bokoch/CLionProjects/OOP/lab6/Figure/Trapezoid.h
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.h
- /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.cpp
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.h
- /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.cpp
  /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.h
  /home/bokoch/CLionProjects/OOP/lab6/main.cpp

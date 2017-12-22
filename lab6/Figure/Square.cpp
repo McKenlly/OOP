@@ -11,7 +11,7 @@ Square::Square(const Square& object1) {
 }
 Square::Square(std::istream& is)
 {
-    std::cout << "Enter side: ";
+//    std::cout << "Enter side: ";
     is >> side;
 }
 
@@ -31,7 +31,7 @@ Square::~Square() {
 }
 
 std::ostream& operator<<(std::ostream& os, const Square& square){
-    os << "Side A = " << square.side;
+//    os << "Side A = " << square.side;
     return os;
 }
 

@@ -1,67 +1,61 @@
-#ifndef LAB6_TLIST_CPP
-#define LAB6_TLIST_CPP
+#include <iostream>
+#include <memory>
 #include "TList.h"
 
 template <class T>
-TList<T>::TList() {
-    _head = nullptr;
-    _tail = nullptr;
-    _size = 0;
+TList<T>::TList()
+{
+    head = nullptr;
+    count = 0;
 }
+
 template <class T>
-TList<T>::~TList() {
-    TListItem<T> *tmp = _head, *tmp2;
-    while (tmp != nullptr) {
-        tmp2 = &tmp->GetNext();
-        delete tmp;
-        tmp = tmp2;
+void TList<T>::Push(const T &item)
+{
+    TListItem<T> *tmp = new TListItem<T>(item, head);
+    head = tmp;
+    ++count;
+}
+
+template <class T>
+bool TList<T>::IsEmpty() const
+{
+    return !count;
+}
+
+template <class T>
+size_t TList<T>::GetLength() const
+{
+    return count;
+}
+
+template <class T>
+void TList<T>::Pop()
+{
+    if (head) {
+        TListItem<T> *tmp = &head->GetNext();
+        delete head;
+        head = tmp;
+        --count;
     }
 }
 
 template <class T>
-bool TList<T>::IsEmpty() {
-    return _size == 0;
+T &TList<T>::Top()
+{
+    return head->Pop();
 }
+
 template <class T>
-size_t TList<T>::size() const{
-    return _size;
-}
-template <class T>
-void TList<T>::PushBack(T& value){
-    if (_head == nullptr) {
-        _head = new TListItem<T>(&value);
-        _tail = _head;
-    } else {
-        TListItem<T> *newNode = new TListItem<T>(&value);
-        _tail->SetNext(newNode);
-        _tail = newNode;
-    }
-    _size++;
-}
-template <class T>
-T& TList<T>::Front() {
-    return _head->GetValue();
-}
-template<typename T>
-T& TList<T>::Back() {
-    return _tail->GetValue();
-}
-template<typename T>
-void TList<T>::PopFront() {
-    if (!this->IsEmpty()) {
-        TListItem<T> *tmp = _head;
-        _head = &_head->GetNext();
+TList<T>::~TList()
+{
+    for (TListItem<T> *tmp = head, *tmp2; tmp; tmp = tmp2) {
+        tmp2 = &tmp->GetNext();
         delete tmp;
-        if (_size == 1) {
-            delete _tail;
-        }
-        _size--;
     }
 }
-//void TList<T>::PopBack() {
-//    if (this->IsEmpty() != 0) {
-//        _head = _head->next;
-//        _size--;
-//    }
-//}
-#endif
+
+typedef unsigned char TByte;
+
+template class
+TList<void *>;

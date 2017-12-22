@@ -1,26 +1,31 @@
+#ifndef TLIST_H
+#define TLIST_H
 
-#ifndef LAB6_TLIST_H
-#define LAB6_TLIST_H
+#include <cstdint>
+#include <cstdio>
 #include "TListItem.h"
+#include <iostream>
+template <class T>
+class TListItem;
 
 template <class T>
-class TList {
-private:
-    TListItem<T> *_head;
-    TListItem<T> *_tail;
-    size_t _size;
+class TList
+{
 public:
     TList();
     virtual ~TList();
-    void PushBack(T& item);
-    bool IsEmpty();
-    void PopFront();
-    size_t size() const;
-    T& Front();
-    T& Back();
 
+    void Push(const T &item);
+    void Pop();
+    T &Top();
+    bool IsEmpty() const;
+    size_t GetLength() const;
+
+    template <class A> friend std::ostream& operator<<(std::ostream &os, const TList<A> &stack);
+
+private:
+    TListItem<T> *head;
+    size_t count;
 };
 
-typedef unsigned char Byte;
-#include "TList.cpp"
-#endif //LAB6_TLIST_H
+#endif

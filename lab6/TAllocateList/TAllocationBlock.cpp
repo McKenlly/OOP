@@ -1,41 +1,46 @@
-
 #include "TAllocationBlock.h"
-TAllocationBlock::TAllocationBlock(size_t size, size_t count) : _size(size), _count(count) {
-    _used_blocks = (unsigned char *)malloc(_size*_count);
-    for (size_t i = 0; i < _count; i++) {
-        void *ptr = _used_blocks+i*size;
-        _free_blocks.PushBack(ptr);
-    }
-    _free_count = _count;
-    std::cout << "TAllocationBlock: Memory init\n";
-}
-void * TAllocationBlock::allocate() {
-    void *result = nullptr;
-    if (_free_count > 0) {
-        result = _free_blocks.Front();
-        _free_blocks.PopFront();
-        _free_count--;
-        std::cout << "TAllocationBlock: Allocate " << (_count-_free_count)
-                                                   << " of " << _count << std::endl;
+#include <iostream>
 
-    } else {
-        std::cout << "TAllocationBlock: No memory exception :-)" << std::endl;
+TAllocationBlock::TAllocationBlock(size_t size, size_t count)
+{
+    _used_blocks = (Byte *)malloc(size * count);
+
+    void * ptr;
+    for (size_t i = 0; i < count; ++i) {
+        ptr = _used_blocks + i * size;
+        _free_blocks.Push(ptr);
     }
-    return result;
 }
-bool TAllocationBlock::Find(void *pointer) {
-    return (_used_blocks < pointer && pointer < _used_blocks + _size*_count);
+
+void *TAllocationBlock::Allocate()
+{
+    if (!_free_blocks.IsEmpty()) {
+        void * res = _free_blocks.Top();
+        _free_blocks.Pop();
+        return res;
+    }
+    else {
+        throw std::bad_alloc();
+    }
 }
-void TAllocationBlock::deallocate(void *pointer) {
-    std::cout << "TAllocationBlock: Deallocate block\n";
-    _free_blocks.PushBack(pointer);
-    pointer = nullptr;
-    _free_count++;
+
+void TAllocationBlock::Deallocate(void *ptr)
+{
+    _free_blocks.Push(ptr);
 }
-bool TAllocationBlock::has_free_blocks() {
-    return _free_count>0;
+
+bool TAllocationBlock::Empty()
+{
+    return _free_blocks.IsEmpty();
 }
-TAllocationBlock::~TAllocationBlock() {
-    std::cout << "Desktructor: Memory freed\n";
+
+size_t TAllocationBlock::Size()
+{
+    return _free_blocks.GetLength();
+}
+
+TAllocationBlock::~TAllocationBlock()
+{
     free(_used_blocks);
+    std::cout << "allocator finished it\'s work\n";
 }

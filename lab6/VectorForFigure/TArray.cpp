@@ -16,16 +16,6 @@ TVector<T>::TVector(const size_t &sizeArr) {
     _capacity = sizeArr;
     _size = 0;
 }
-/*template <class T>*/
-/*void *TVector<T>::operator new(size_t size)
-{
-    return allocSimple.allocate();
-}
-template <class T>
-void TVector<T>::operator delete(void *ptr)
-{
-    allocSimple.deallocate(ptr);
-}*/
 
 template <class T>
 TVector<T>::TVector(TVector<T>& orig) {
@@ -45,7 +35,6 @@ std::ostream &operator<<(std::ostream &os, const TVector<T> &objArr) {
     for (size_t index = 0; index < objArr._size; ++index) {
         if (&objArr[index] != nullptr) {
             os << index << "\t";
-            //objArr[index]
         }
     }
     return os;

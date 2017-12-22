@@ -1,6 +1,8 @@
 #ifndef LAB6_TVECTORITEM_CPP
 #define LAB6_TVECTORITEM_CPP
 #include "./TVectorItem.h"
+#include "../Figure/Figure.h"
+
 template <class T>
 TVectorItem <T>::TVectorItem () {
     this->_value = nullptr;
@@ -14,12 +16,13 @@ TVectorItem <T>::TVectorItem (T &item) {
 
 template <class T>
 TVectorItem <T>::TVectorItem (T *item) {
-    this->_value = item;
+    this->_value = new T(item);
     std::cout << "TVectorItem: created" << std::endl;
 }
 
 template <class T>
-TAllocationBlock TVectorItem <T>::Memory (16, 1000);
+TAllocationBlock	//происходит только один раз, так как это единое статическое поле для всех объектов класса
+TVectorItem<T>::Memory(sizeof(TVectorItem<T>), MAX_TREE_CAPACITY);
 
 template <class A>
 std::ostream &operator << (std::ostream &os, const TVectorItem <A> &obj) {
@@ -29,28 +32,19 @@ std::ostream &operator << (std::ostream &os, const TVectorItem <A> &obj) {
 
 template <class T>
 void *TVectorItem <T>::operator new (size_t size) {
-    return Memory.allocate();
+    return Memory.Allocate();
 }
 
-/*template <class T>
-void *TVectorItem <T>::operator new [](size_t count) {
-    return memory.allocateSome(count);
-}*/
 
 template <class T>
 void TVectorItem <T>::operator delete (void *p) {
-    if (Memory.Find(p))
-        Memory.deallocate(p);
+    Memory.Deallocate(p);
 }
-/*
-template <class T>
-void TVectorItem <T>::operator delete[] (void *p, size_t count) {
-    memory.deallocateSome(p,count);
-}*/
 
 template <class T>
 TVectorItem <T>::~TVectorItem () {
-    delete _value;
+    if (_value)
+        delete _value;
     std::cout << "TVectorItem deleted" << std::endl;
 }
 

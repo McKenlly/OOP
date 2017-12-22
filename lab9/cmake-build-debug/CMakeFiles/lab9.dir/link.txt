@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lab9.dir/main.cpp.o CMakeFiles/lab9.dir/rectangle.cpp.o CMakeFiles/lab9.dir/square.cpp.o CMakeFiles/lab9.dir/TAllocationBlock.cpp.o CMakeFiles/lab9.dir/TList.cpp.o CMakeFiles/lab9.dir/TListItem.cpp.o CMakeFiles/lab9.dir/trapeze.cpp.o CMakeFiles/lab9.dir/TStack.cpp.o CMakeFiles/lab9.dir/TStackItem.cpp.o  -o lab9 

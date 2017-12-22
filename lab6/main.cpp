@@ -16,29 +16,29 @@ void Display()
 int main(int argc, char **argv) {
     int action = 0;
     TVector<Figure> *array = new TVector<Figure>;
-    //std::shared_ptr<Figure> ptr, ptr2;
+    std::shared_ptr<Figure> ptr, ptr2;
     clock_t start = clock();
-    while (std::cin >> action){
-        //Display();
+    bool flag = true;
+    while (flag){
+        Display();
+        std::cin >> action;
         Figure *s1;
         switch(action) {
             case 1:
                 s1 = new Trapezoid(std::cin);
                 array->Push_back(*s1);
-                //delete s1;
                 break;
             case 2:
                 s1 = new Square(std::cin);
                 array->Push_back(*s1);
-                //delete s1;
                 break;
             case 3:
                 s1 = new Rectangle(std::cin);
                 array->Push_back(*s1);
-                //delete s1;
+                delete s1;
                 break;
             case 4:
-                //std::cout << "Enter index" << std::endl;
+                std::cout << "Enter index" << std::endl;
                 int index;
                 std::cin >> index;
                 array->Delete(index);
@@ -54,26 +54,27 @@ int main(int argc, char **argv) {
                 }
                 break;
             case 6:
-                //std::cout << "Enter index" << std::endl;
+                std::cout << "Enter index" << std::endl;
                 int ind;
                 std::cin >> ind;
                 if (array->Empty()) {
-                //    std::cout << "Array is empty" << std::endl;
+                    std::cout << "Array is empty" << std::endl;
                 }
                 else {
-//                    if (array->Size() > ind || (*array)[ind]. != nullptr)
-//                        (*array)[ind]->Print();
-//                    else
-//                        std::cout << "No such Figure" << std::endl;
+                    if (array->Size() > ind /*|| (*array)[ind] != nullptr*/)
+                        (*array)[ind].Print();
+                    else
+                        std::cout << "No such Figure" << std::endl;
                 }
                 break;
             case 0:
+                flag = false;
                 break;
             default:
-  //              std::cout << "Incorrect command" << std::endl;;
+                std::cout << "Incorrect command" << std::endl;;
                 break;
         }
-    } 
+    }
     clock_t end = clock();
     double time = (double) (end - start);
     printf("Time with allocator = %lf\n", time / CLOCKS_PER_SEC);

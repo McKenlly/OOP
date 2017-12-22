@@ -7,15 +7,15 @@ Rectangle::Rectangle(size_t a, size_t b) : sideA(a), sideB(b){
 }
 Rectangle::Rectangle(std::istream& is)
 {
-	std::cout << "Enter side A: ";
+//	std::cout << "Enter side A: ";
 	is >> sideA;
-	std::cout << "Enter side B: ";
+//	std::cout << "Enter side B: ";
 	is >> sideB;
 }
 std::istream& operator>>(std::istream& is, Rectangle& rectangle) {
-	std::cout << "Enter side A: ";
+//	std::cout << "Enter side A: ";
 	is >> rectangle.sideA;
-	std::cout << "Enter side B: ";
+//	std::cout << "Enter side B: ";
 	is >> rectangle.sideB;
     return is;
 }
@@ -38,5 +38,5 @@ double Rectangle::Area() const {
 }
 
 Rectangle::~Rectangle() {
-    std::cout << "Rectangle deleted" << std::endl;
+//    std::cout << "Rectangle deleted" << std::endl;
 }

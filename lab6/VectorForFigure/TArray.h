@@ -35,13 +35,9 @@ public:
 
     TIterator <TVectorItem<T>*> begin ();
     TIterator <TVectorItem<T>*> end ();
-    //void * operator new(size_t size);
-    //void operator delete(void *ptr);
     ~TVector();
 private:
     TVectorItem<T> **_data;
-
-    //static TAllocationBlock memory;
     size_t _capacity;
 
     size_t _size;

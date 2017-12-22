@@ -1,24 +1,21 @@
+#ifndef TLISTITEM_H
+#define TLISTITEM_H
 
-#ifndef LAB6_TLISTITEM_H
-#define LAB6_TLISTITEM_H
-#include <iostream>
 template <class T>
-class TListItem {
+class TListItem
+{
 public:
-    explicit TListItem();
-    explicit TListItem(T *obj);
-   // T GetFigure() const;
-    TListItem<T>& GetNext();
-    T& GetValue();
-    void SetNext(TListItem<T>* item);
-    virtual ~TListItem() {
-        delete item;
-    }
+    TListItem(const T &val, TListItem<T> *item);
+    virtual ~TListItem();
+
+    void Push(const T &val);
+    T &Pop() const;
+    void SetNext(TListItem<T> *item);
+    TListItem<T> &GetNext() const;
+
 private:
-    //friend class TList<T>;
-    T *item;
+    T *value;
     TListItem<T> *next;
 };
 
-#include "TListItem.cpp"
-#endif //LAB6_TLISTITEM_H
+#endif

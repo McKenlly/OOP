@@ -1,25 +1,31 @@
-#ifndef LAB6_TALLOCATIONBLOCK_H
-#define LAB6_TALLOCATIONBLOCK_H
-#include "TList.h"
-#include <cstdlib>
+#ifndef TALLOCATIONBLOCK_H
+#define TALLOCATIONBLOCK_H
 
-class TAllocationBlock {
+#include <iostream>
+#include <cstdlib>
+#include "TList.h"
+
+typedef unsigned char Byte;
+typedef void * VoidPtr;
+
+template<class T>
+class TList;
+
+class TAllocationBlock
+{
 public:
     TAllocationBlock(size_t size, size_t count);
-    void *allocate();
-    void deallocate(void *pointer);
-    bool has_free_blocks();
-    bool Find(void *);
-    virtual ~TAllocationBlock();
-private:
-    size_t _size;
-    size_t _count;
-    unsigned char *_used_blocks;
-    //void **_free_blocks;
-    TList<void *> _free_blocks;
-    size_t _free_count;
+    void *Allocate();
+    void Deallocate(void *ptr);
+    bool Empty();
+    size_t Size();
 
+    virtual ~TAllocationBlock();
+
+private:
+    Byte *_used_blocks;
+    TList<VoidPtr> _free_blocks;
 };
 
+#endif /* TALLOCATIONBLOCK_H * */
 
-#endif //LAB6_TALLOCATIONBLOCK_H

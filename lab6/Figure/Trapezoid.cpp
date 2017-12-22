@@ -2,30 +2,30 @@
 
 Trapezoid::Trapezoid():Trapezoid(0, 0, 0) {}
 Trapezoid::Trapezoid(size_t a, size_t b, size_t h): sideA(a), sideB(b), height(h){
-	std::cout << "Trapezoid created:\n" << "side A = " << sideA << "\nside B = " << sideB
-			  << "\nHeight = " << height << std::endl;
+//	std::cout << "Trapezoid created:\n" << "side A = " << sideA << "\nside B = " << sideB
+//			  << "\nHeight = " << height << std::endl;
 }
 Trapezoid::Trapezoid(const Trapezoid& object1) {
-	std::cout << "Trapezoid copy created\n";
+//	std::cout << "Trapezoid copy created\n";
 	sideA = object1.sideA;
 	sideB = object1.sideB;
 	height = object1.height;
 }
 Trapezoid::Trapezoid(std::istream& is)
 {
-	std::cout << "Enter side A: ";
+//	std::cout << "Enter side A: ";
 	is >> sideA;
-	std::cout << "Enter side B: ";
+//	std::cout << "Enter side B: ";
 	is >> sideB;
-	std::cout << "Enter height: ";
+//	std::cout << "Enter height: ";
 	is >> height;
 }
 std::istream& operator>>(std::istream& is, Trapezoid& trap) {
-	std::cout << "Enter side A: ";
+//	std::cout << "Enter side A: ";
 	is >> trap.sideA;
-	std::cout << "Enter side B: ";
+//	std::cout << "Enter side B: ";
 	is >> trap.sideB;
-	std::cout << "Enter height: ";
+//	std::cout << "Enter height: ";
 	is >> trap.height;
 	return  is;
 }

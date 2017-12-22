@@ -15,6 +15,8 @@ cstdlib
 /home/bokoch/CLionProjects/OOP/lab6/./VectorForFigure/./TVectorItem.cpp
 ./TVectorItem.h
 /home/bokoch/CLionProjects/OOP/lab6/./VectorForFigure/././TVectorItem.h
+../Figure/Figure.h
+/home/bokoch/CLionProjects/OOP/lab6/./VectorForFigure/Figure/Figure.h
 
 /home/bokoch/CLionProjects/OOP/lab6/./VectorForFigure/./TVectorItem.h
 memory
@@ -79,32 +81,40 @@ Figure.h
 /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.cpp
 TAllocationBlock.h
 /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.h
-
-/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.h
-TList.h
-/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.h
-cstdlib
+iostream
 -
 
+/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TAllocationBlock.h
+iostream
+-
+cstdlib
+-
+TList.h
+/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.h
+
 /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.cpp
+iostream
+-
+memory
+-
 TList.h
 /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.h
 
 /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.h
+cstdint
+-
+cstdio
+-
 TListItem.h
-/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.h
-TList.cpp
-/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TList.cpp
-
-/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.cpp
-TListItem.h
-/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.h
-
 /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.h
 iostream
 -
-TListItem.cpp
+
 /home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.cpp
+TListItem.h
+/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.h
+
+/home/bokoch/CLionProjects/OOP/lab6/TAllocateList/TListItem.h
 
 /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/./TIterator.h
 iostream
@@ -115,6 +125,8 @@ cstdlib
 /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/./TVectorItem.cpp
 ./TVectorItem.h
 /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/././TVectorItem.h
+../Figure/Figure.h
+/home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/Figure/Figure.h
 
 /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/./TVectorItem.h
 memory
@@ -155,6 +167,8 @@ memory
 /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/TVectorItem.cpp
 ./TVectorItem.h
 /home/bokoch/CLionProjects/OOP/lab6/VectorForFigure/./TVectorItem.h
+../Figure/Figure.h
+/home/bokoch/CLionProjects/OOP/lab6/Figure/Figure.h
 
 /home/bokoch/CLionProjects/OOP/lab6/main.cpp
 cstdlib
